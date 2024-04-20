@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "version": "1.0.2",
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "build:analyze": "ANALYZE=1 umi build",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.18.0",
+    "@ant-design/icons": "^5.2.6",
+    "@ant-design/pro-card": "^2.5.27",
+    "@ant-design/pro-layout": "^7.17.16",
+    "@antv/g2": "^5.1.10",
+    "@antv/g2plot": "^2.4.31",
+    "@umijs/hooks": "^1.9.3",
+    "antd": "^5.11.5",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "get-image-data": "^5.0.0",
+    "jr-qrcode": "^1.1.4",
+    "js-base64": "^3.7.5",
+    "jsqr": "^1.4.0",
+    "markdown-to-jsx": "^7.3.2",
+    "moment": "^2.29.4",
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-router-dom": "^6.20.1",
+    "record-error": "^1.0.3",
+    "umi": "^4.0.89",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.x",
+    "@types/react-dom": "^18.x",
+    "@umijs/preset-react": "^2",
+    "@umijs/test": "^4.0.89",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2",
+    "yorkie": "^2.0.0"
+  }
+}
